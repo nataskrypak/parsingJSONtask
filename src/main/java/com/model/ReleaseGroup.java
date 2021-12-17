@@ -5,7 +5,8 @@ import com.model.release.Release;
 import java.util.List;
 
 public class ReleaseGroup {
-    public String name;
+    private String name;
+    private List<Release> releases;
 
     public String getName() {
         return name;
@@ -22,7 +23,5 @@ public class ReleaseGroup {
     public void setReleases(List<Release> releases) {
         this.releases = releases;
     }
-
-    public List<Release> releases;
 
 }
