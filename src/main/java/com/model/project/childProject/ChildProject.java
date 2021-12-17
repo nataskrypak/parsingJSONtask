@@ -1,20 +1,15 @@
-package com.model;
+package com.model.project.childProject;
 
-import com.model.project.childProject.ChildProject;
-import com.model.project.Epic;
+import com.model.Project;
 import com.model.project.ReportFile;
-import com.model.project.RootCaus;
 
 import java.util.List;
 
-public class Project {
-
+public class ChildProject extends Project {
     private String name;
     private String releaseGroup;
     private List<ReportFile> reportFiles;
     private List<ChildProject> childProjects;
-    private List<RootCaus> rootCauses;
-    private List<Epic> epics;
 
     public String getName() {
         return name;
@@ -47,21 +42,4 @@ public class Project {
     public void setChildProjects(List<ChildProject> childProjects) {
         this.childProjects = childProjects;
     }
-
-    public List<RootCaus> getRootCauses() {
-        return rootCauses;
-    }
-
-    public void setRootCauses(List<RootCaus> rootCauses) {
-        this.rootCauses = rootCauses;
-    }
-
-    public List<Epic> getEpics() {
-        return epics;
-    }
-
-    public void setEpics(List<Epic> epics) {
-        this.epics = epics;
-    }
-
 }

@@ -4,7 +4,7 @@ import com.google.gson.Gson;
 import com.model.Root;
 
 import java.io.FileReader;
-import java.sql.SQLOutput;
+
 
 public class GsonParser {
     public Root parse() {
