@@ -24,4 +24,11 @@ public class ReleaseGroup {
         this.releases = releases;
     }
 
+    @Override
+    public String toString() {
+        return "ReleaseGroup{" +
+                "name='" + name + '\'' +
+                ", releases=" + releases +
+                '}';
+    }
 }

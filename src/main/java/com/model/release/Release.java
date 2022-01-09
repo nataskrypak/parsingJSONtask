@@ -1,21 +1,18 @@
 package com.model.release;
 
-import com.model.ReleaseGroup;
 import com.model.release.sprint.Sprint;
 
 import java.util.List;
 
-public class Release extends ReleaseGroup {
+public class Release {
     private String name;
     private String length;
     private String startDateOffset;
 
-    @Override
     public String getName() {
         return name;
     }
 
-    @Override
     public void setName(String name) {
         this.name = name;
     }
@@ -45,4 +42,14 @@ public class Release extends ReleaseGroup {
     }
 
     public List<Sprint> sprints;
+
+    @Override
+    public String toString() {
+        return "Release{" +
+                "name='" + name + '\'' +
+                ", length='" + length + '\'' +
+                ", startDateOffset='" + startDateOffset + '\'' +
+                ", sprints=" + sprints +
+                '}';
+    }
 }

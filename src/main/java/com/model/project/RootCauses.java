@@ -1,8 +1,6 @@
 package com.model.project;
 
-import com.model.Project;
-
-public class RootCaus extends Project {
+public class RootCauses {
     private String name;
     private String description;
 
@@ -20,5 +18,13 @@ public class RootCaus extends Project {
 
     public void setDescription(String description) {
         this.description = description;
+    }
+
+    @Override
+    public String toString() {
+        return "RootCauses{" +
+                "name='" + name + '\'' +
+                ", description='" + description + '\'' +
+                '}';
     }
 }

@@ -1,9 +1,9 @@
 package com.model;
 
-import com.model.project.childProject.ChildProject;
+import com.model.project.ChildProject;
 import com.model.project.Epic;
 import com.model.project.ReportFile;
-import com.model.project.RootCaus;
+import com.model.project.RootCauses;
 
 import java.util.List;
 
@@ -13,7 +13,7 @@ public class Project {
     private String releaseGroup;
     private List<ReportFile> reportFiles;
     private List<ChildProject> childProjects;
-    private List<RootCaus> rootCauses;
+    private List<RootCauses> rootCauses;
     private List<Epic> epics;
 
     public String getName() {
@@ -48,11 +48,11 @@ public class Project {
         this.childProjects = childProjects;
     }
 
-    public List<RootCaus> getRootCauses() {
+    public List<RootCauses> getRootCauses() {
         return rootCauses;
     }
 
-    public void setRootCauses(List<RootCaus> rootCauses) {
+    public void setRootCauses(List<RootCauses> rootCauses) {
         this.rootCauses = rootCauses;
     }
 
@@ -64,4 +64,15 @@ public class Project {
         this.epics = epics;
     }
 
+    @Override
+    public String toString() {
+        return "Project{" +
+                "name='" + name + '\'' +
+                ", releaseGroup='" + releaseGroup + '\'' +
+                ", reportFiles=" + reportFiles +
+                ", childProjects=" + childProjects +
+                ", rootCauses=" + rootCauses +
+                ", epics=" + epics +
+                '}';
+    }
 }

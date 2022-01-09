@@ -1,8 +1,6 @@
 package com.model.project;
 
-import com.model.Project;
-
-public class ReportFile extends Project {
+public class ReportFile {
     public String fileLocation;
     public Integer startDateOffset;
 
@@ -20,5 +18,13 @@ public class ReportFile extends Project {
 
     public void setStartDateOffset(Integer startDateOffset) {
         this.startDateOffset = startDateOffset;
+    }
+
+    @Override
+    public String toString() {
+        return "ReportFile{" +
+                "fileLocation='" + fileLocation + '\'' +
+                ", startDateOffset=" + startDateOffset +
+                '}';
     }
 }
