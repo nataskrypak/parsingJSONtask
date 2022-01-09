@@ -5,7 +5,8 @@ import com.model.release.Release;
 import java.util.List;
 
 public class ReleaseGroup {
-    public String name;
+    private String name;
+    private List<Release> releases;
 
     public String getName() {
         return name;
@@ -23,6 +24,11 @@ public class ReleaseGroup {
         this.releases = releases;
     }
 
-    public List<Release> releases;
-
+    @Override
+    public String toString() {
+        return "ReleaseGroup{" +
+                "name='" + name + '\'' +
+                ", releases=" + releases +
+                '}';
+    }
 }

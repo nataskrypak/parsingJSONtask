@@ -1,8 +1,6 @@
 package com.model.release.sprint;
 
-import com.model.release.Release;
-
-public class Sprint extends Release {
+public class Sprint {
     private String name;
     private String length;
     private String startDateOffset;
@@ -29,5 +27,14 @@ public class Sprint extends Release {
 
     public void setStartDateOffset(String startDateOffset) {
         this.startDateOffset = startDateOffset;
+    }
+
+    @Override
+    public String toString() {
+        return "Sprint{" +
+                "name='" + name + '\'' +
+                ", length='" + length + '\'' +
+                ", startDateOffset='" + startDateOffset + '\'' +
+                '}';
     }
 }

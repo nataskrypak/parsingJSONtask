@@ -1,26 +1,21 @@
 package com.model.project;
 
-import com.model.Project;
-
 import java.util.List;
 
-public class Epic extends Project {
+public class Epic {
     private String name;
     private String description;
     private Integer sSizes;
     private Integer startDateOffset;
     private List<String> releases;
 
-    @Override
     public String getName() {
         return name;
     }
 
-    @Override
     public void setName(String name) {
         this.name = name;
     }
-
     public String getDescription() {
         return description;
     }
@@ -53,4 +48,14 @@ public class Epic extends Project {
         this.releases = releases;
     }
 
+    @Override
+    public String toString() {
+        return "Epic{" +
+                "name='" + name + '\'' +
+                ", description='" + description + '\'' +
+                ", sSizes=" + sSizes +
+                ", startDateOffset=" + startDateOffset +
+                ", releases=" + releases +
+                '}';
+    }
 }

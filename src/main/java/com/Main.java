@@ -1,4 +1,4 @@
-package com.json;
+package com;
 
 import com.json.GsonParser;
 import com.model.Root;
